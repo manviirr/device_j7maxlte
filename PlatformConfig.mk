@@ -1,0 +1,19 @@
+# Platform
+TARGET_BOARD_PLATFORM := mt6757
+
+# Architecture
+TARGET_ARCH := arm
+TARGET_ARCH_VARIANT := armv7-a-neon
+TARGET_CPU_ABI := armeabi-v7a
+TARGET_CPU_ABI2 := armeabi
+TARGET_CPU_VARIANT := cortex-a53
+
+TARGET_BOARD_SUFFIX := _64
+TARGET_BOARD_PLATFORM_GPU := mali-t880mp2
+TARGET_USES_64_BIT_BINDER := true
+
+# Architecture Extensions
+TARGET_CPU_SMP := true
+ARCH_ARM_HAVE_NEON := true
+ARCH_ARM_HAVE_TLS_REGISTER := true
+ARCH_ARM_HAVE_VFP := true
