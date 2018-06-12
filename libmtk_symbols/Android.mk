@@ -17,7 +17,7 @@ LOCAL_SRC_FILES := \
 #LOCAL_SRC_FILES_32 := mtk_string.cpp
 #LOCAL_SRC_FILES_32 += mtk_wvm32.cpp
 # only for 64bit libraries
-LOCAL_SRC_FILES_64 := mtk_parcel.cpp
+#LOCAL_SRC_FILES_64 := mtk_parcel.cpp
 #LOCAL_SRC_FILES_64 += mtk_wvm64.cpp
 
 

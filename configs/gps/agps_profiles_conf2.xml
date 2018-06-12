@@ -403,9 +403,9 @@
     epc_molr_lpp_payload_enable="false"
     epc_molr_lpp_payload="D2000010237B2026404FB8007202BFFFFFFFF80000000020C0000100940FB9001202B7FFFFF8000000000061800002018A00"
     reject_non911_nilr_enable="false"
-    cp_2g_disable="false"
-    cp_3g_disable="false"
-    cp_4g_disable="false"
+    cp_2g_disable="true"
+    cp_3g_disable="true"
+    cp_4g_disable="true"
   />
 
   <!-- up_setting
@@ -543,9 +543,16 @@
     supl_raw_data_enable:
         enable/disable SUPL raw data dump to main log (logcat)
         available value: true, false (default)
+    allow_ni_for_gps_off:
+        allow NI request when GPS is off in location setting
+        available value: true, false (default)
+    force_otdoa_assist_req:
+        force to fill otdoa assistance request when posMethod=agpsSETassisted,agpsSETassistedpref,ver2-agnssSETassisted or agnssSETassistedpref
+        Notice that some servers may not allow to get otdoa assistance request when posMethod is not OTDOA
+        available value: true, false (default)
   -->
   <up_setting
-    ca_enable="false"
+    ca_enable="true"
     ni_request="true"
     roaming="true"
     cdma_preferred="0"
@@ -567,20 +574,22 @@
     udp_port_enable="false"
     dedicated_apn_enable="false"
     preferred_2g3g_cell_age="300"
-    lpp_enable="true"
+    lpp_enable="false"
     cert_from_sdcard="true"
     auto_profile_enable="true"
-    ut1="11"
-    ut2="11"
-    ut3="10"
+    ut1="20"
+    ut2="20"
+    ut3="20"
     sync_to_slp="false"
     imsi_enable="true"
-    no_sensitive_log="false"
+    no_sensitive_log="true"
     supl_ver_minor="0"
     supl_ver_ser_ind="0"
-    tls_reuse_enable="false"
-    imsi_cache_enable="false"
-    supl_raw_data_enable="false"
+    tls_reuse_enable="true"
+    imsi_cache_enable="true"
+    supl_raw_data_enable="true"
+    allow_ni_for_gps_off="false"
+    force_otdoa_assist_req="false"
   />
 
 </mtk_agps_profiles>

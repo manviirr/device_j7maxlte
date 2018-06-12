@@ -126,6 +126,7 @@ key 103   DPAD_UP
 key 104   PAGE_UP
 key 105   DPAD_LEFT
 key 106   DPAD_RIGHT
+#key 107 (CHN FOLDER MODEL)
 key 107   MOVE_END
 key 108   DPAD_DOWN
 key 109   PAGE_DOWN
@@ -141,7 +142,7 @@ key 117   NUMPAD_EQUALS
 key 119   BREAK
 # key 120 (undefined)
 key 121   NUMPAD_COMMA
-key 122   KANA
+key 122   LANG
 key 123   EISU
 key 124   YEN
 key 125   META_LEFT
@@ -202,27 +203,27 @@ key 179   NUMPAD_LEFT_PAREN
 key 180   NUMPAD_RIGHT_PAREN
 # key 181 "KEY_NEW"
 # key 182 "KEY_REDO"
-#OS: modify NMOKUAI-6 by panminjie 20161021 start
-key 183   F13
-#OS: modify NMOKUAI-6 by panminjie 20161021 end
-#modify fingerprit_key by wenbo.yin 20161121 start
-key 184   FP_WAKEUP
-key 185   FP_LONG_PRESS
-key 186   FP_LEFT
-key 187   FP_RIGHT
-key 188   FP_UP
-key 189   FP_DOWN
-#modify fingerprit_key by wenbo.yin 20161121 end
+# key 183   F13
+# key 184   F14
+# key 185   F15
+# key 186   F16
+# key 187   F17
+# key 188   F18
+# key 189   F19
 # key 190   F20
 # key 191   F21
 # key 192   F22
 # key 193   F23
 # key 194   F24
 # key 195 (undefined)
+key 195   USER	# input_fw defined
 # key 196 (undefined)
 # key 197 (undefined)
 # key 198 (undefined)
 # key 199 (undefined)
+# input_fw for voice wakeup
+key 198   VOICE_WAKEUP_LPSD
+key 199   VOICE_WAKEUP
 key 200   MEDIA_PLAY
 key 201   MEDIA_PAUSE
 # key 202 "KEY_PROG3"
@@ -250,6 +251,18 @@ key 217   SEARCH
 key 224   BRIGHTNESS_DOWN
 key 225   BRIGHTNESS_UP
 key 226   HEADSETHOOK
+
+# samsung 
+key 231   CALL #(CHN FOLDER MODEL)
+
+# samsung 
+key 252   USER
+
+# samsung 
+key 253   DOUBLE_TAP
+
+# samsung
+key 254   APP_SWITCH
 
 key 256   BUTTON_1
 key 257   BUTTON_2
@@ -301,11 +314,9 @@ key 315   BUTTON_START
 key 316   BUTTON_MODE
 key 317   BUTTON_THUMBL
 key 318   BUTTON_THUMBR
-#OS: add by lulingjie for hall 20161027 start
-key 356   HALL_CLOSE
-key 357   HALL_OPEN
-#OS: add by lulingjie for hall 20161027 end
 
+#input_fw gamepad button
+key 319   BUTTON_GAME
 
 # key 352 "KEY_OK"
 key 353   DPAD_CENTER
@@ -372,13 +383,31 @@ key 403   CHANNEL_DOWN
 # key 414 "KEY_TEEN"
 # key 415 "KEY_TWEN"
 
+#input_fw 2015-12-24 gamepad button (request by iss.song, Graphics R&D Group)
+key 417 BUTTON_GAME #(KEY_GAMES 0x01a1)
+
 key 429   CONTACTS
+key 430   MESSAGE
 
 # key 448 "KEY_DEL_EOL"
 # key 449 "KEY_DEL_EOS"
 # key 450 "KEY_INS_LINE"
 # key 451 "KEY_DEL_LINE"
 
+key 452   CAM_QUICK_REAR
+key 453   CAM_QUICK_FRONT
+key 454   2ND_SCREEN_WAKEUP
+
+# key 455 used for blackscreenUI
+# key 456 KEY_BLACK_UI_QUICKAPP_ACCESS
+# key 457 KEY_BLACK_UI_DIRECT_INDICATOR
+
+# input_fw for swipe gestures from sides, used for wakeup
+key 458 SIDE_GESTURE_RIGHT
+key 459 SIDE_GESTURE_LEFT
+
+# input_fw Adaptive noise cancelling
+key 460 ANC
 
 key 464   FUNCTION
 key 465   ESCAPE            FUNCTION
@@ -412,8 +441,37 @@ key 484   B                 FUNCTION
 # key 503 KEY_BRL_DOT7
 # key 504 KEY_BRL_DOT8
 
+key 522	STAR
+key 523	POUND
+
+# samsung camera
+key 528   FOCUS
+
+#key 531   TOUCHPAD_ON
+#key 532   TOUCHPAD_OFF
+
+key 548 NETWORK_SEL #(CHN FOLDER MODEL)
+key 549 3G          #(CHN FOLDER MODEL)
+key 550 WATCH       #(CHN FOLDER MODEL)
+key 551 ENDCALL     #(CHN FOLDER MODEL)
+
+#key 576 do not use (specific value used by camera project) - refer to InputReader.cpp
+
 key 580   APP_SWITCH
 key 582   VOICE_ASSIST
+
+# samsung
+key 672   EMERGENCY
+
+# input_fw Intelligent Key for Dream
+key 703   WINK
+
+key 708 QPANEL_ON_OFF
+
+# 753~ 760 is key event for special event
+#key 753   KEY_CP_GRIP
+#key 754   KEY_TSP_NONE_KEY2
+key 755   TA_CHARGING
 
 # Keys defined by HID usages
 key usage 0x0c006F BRIGHTNESS_UP

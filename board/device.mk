@@ -1,2 +1,2 @@
 # OTA assert
-TARGET_OTA_ASSERT_DEVICE := Infinix-X603
+TARGET_OTA_ASSERT_DEVICE := j7maxlte

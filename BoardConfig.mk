@@ -34,6 +34,9 @@ androidboot.selinux=permissive
 # Disable memcpy opt (for audio libraries)
 TARGET_CPU_MEMCPY_OPT_DISABLE := true
 
+# No img
+TARGET_NO_FACTORYIMAGE := true
+
 # EGL
 BOARD_EGL_CFG := $(LOCAL_PATH)/configs/egl.cfg
 USE_OPENGL_RENDERER := true

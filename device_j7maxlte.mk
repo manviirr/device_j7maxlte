@@ -44,3 +44,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Vendor product configurations
 $(call inherit-product-if-exists, vendor/samsung/j7maxlte/j7maxlte-vendor.mk)
+
+# TWRP
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/recovery/etc/recovery.fstab:recovery/root/etc/recovery.fstab
