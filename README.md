@@ -1,6 +1,7 @@
-# Lineage Os 14.1 Device Tree for Smasung Galaxy J7 Max (SM-G615F) codenamed "j7maxlte"
+# Lineage Os 14.1 Device Tree for Samsung Galaxy J7 Max (SM-G615F) codenamed "j7maxlte"
 
 Does the tree compile ?
+
 Yes
 
 Component Type | Details
