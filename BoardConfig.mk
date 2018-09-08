@@ -25,6 +25,9 @@ include $(LOCAL_PATH)/board/*.mk
 # Device vendor board
 -include vendor/samsung/j7maxlte/BoardConfigVendor.mk
 
+
+TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
+
 #######################################################################
 
 # Kernel
@@ -33,6 +36,7 @@ BOARD_GLOBAL_CFLAGS += -DDISABLE_HW_ID_MATCH_CHECK
 androidboot.selinux=permissive
 # Disable memcpy opt (for audio libraries)
 TARGET_CPU_MEMCPY_OPT_DISABLE := true
+
 
 # No img
 TARGET_NO_FACTORYIMAGE := true
